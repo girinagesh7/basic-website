@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTM | HomePage
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            justify-content: center;
+        }
+
+        .logo a img {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 120px;
+            height: 70px;
+        }
+
+        .login {
+            margin-right: 20px;
+            display: flex;
+            justify-content: initial;
+            align-items: center;
+            width: 90px;
+        }
+
+        .login a {
+            text-decoration: none;
+            background-color: #e9f00a;
+            border-radius: 12px;
+            width: 70.1px;
+            height: 24.4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        .login a:hover {
+            color: rgb(255, 119, 0);
+            font-weight: bold;
+            background-color: aliceblue;
+        }
+
+        .searchbar {
+            display: flex;
+            width: 348.867px;
+            align-items: center;
+            height: 96.6px;
+            padding-right: 0px;
+        }
+
+        .searchbar input {
+            border-radius: 7px;
+            height: 23px;
+            width: 343.667px;
+        }
+
+        .searchicon {
+            display: flex;
+            align-items: center;
+        }
+
+        .searchicon img {
+            width: 20px;
+            margin-left: 10px;
+            height: 20px;
+            width: 20px;
+        }
+
+
+        .last {
+            display: inline-flex;
+            text-align: center;
+            width: 1200px;
+            justify-content: end;
+        }
+
+        .main {
+            background-color: #e9f00a;
+            height: 550px;
+            margin-top: 0px;
+        }
+
+        .first {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .tech {
+            height: 239.6px;
+            display: flex;
+            align-items: center;
+            display: block;
+        }
+
+        .tech img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            margin-right: 100px;
+
+
+        }
+
+        .tech a {
+            margin-right: 100px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 10px;
+            height: 25px;
+            background-color: cornsilk;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(8, 131, 247);
+        }
+        .tech a:hover{
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+
+        .health {
+            height: 239.6px;
+            display: block;
+            align-items: center;
+        }
+
+        .health img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        .health a {
+            margin-left: 100px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 10px;
+            height: 25px;
+            background-color: cornsilk;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(8, 131, 247);
+        }
+        .health a:hover{
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+
+        .movies {
+            height: 239.6px;
+            display: block;
+            align-items: center;
+
+        }
+
+        .movies img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            margin-right: 100px;
+        }
+
+        .movies a {
+            text-transform: uppercase;
+            margin-top: 10px;
+            background-color: cornsilk;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 25px;
+            text-decoration: none;
+            color: rgb(8, 131, 247);
+        }
+        .movies a:hover{
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+
+
+        .sports {
+            height: 239.6px;
+            display: block;
+            align-items: center;
+
+        }
+
+        .sports img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+
+        .sports a {
+            text-transform: uppercase;
+            margin-top: 10px;
+            background-color: cornsilk;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+            height: 25px;
+            text-decoration: none;
+            color: rgb(8, 131, 247);
+
+        }
+        .sports a:hover{
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+
+        .footer {
+            background-color: aquamarine;
+            height: 144px;
+        }
+
+        .adressabr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 144px;
+        }
+        .ll{
+            width: 160px
+        }
+
+        .ll ul {
+            list-style: none;
+           
+        }
+
+        .ll ul li {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        .ll ul li a {
+            text-decoration: none;
+            color: black;
+
+        }
+        .ll ul li a:hover {
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        .follow {
+            display: flex;
+            margin-left: 200px;
+        }
+
+        .follow img {
+            width: 100px;
+            height: 80px;
+        }
+
+        .gg {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .gg img {
+            width: 126px;
+            height: 86px;
+            padding-left: 35px;
+            padding-right: 35px;
+
+        }
+
+        .gg p {
+            background-color: white;
+            border-radius: 5px;
+            width: 200px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .follow-icons {
+            margin-left: 200px
+        }
+
+        .follow-icons img {
+            padding: 5px 5px 5px 0px;
+        }
+
+        .ICONS {
+            margin-top: 5px;
+        }
+
+        .ICONS a {
+            margin-right: 10px;
+        }
+
+        .copyright {
+
+            background-color: beige;
+            text-align: center;
+        }
+
+        .copyright p {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"><a href="logo"><img src="logo.png" alt="logo"></a></div>
+        <div class="last">
+            <div class="login"><a href="loginpage.html">LogIn</a></div>
+            <div class="searchbar"><input type="Know thingd better...."></div>
+            <div class="searchicon"><img src="search icon.png" alt="search"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="first">
+            <div class="tech"><img src="tech.jpg" alt="technology">
+                <a href="technology">TECHNOLOGY</a>
+            </div>
+
+            <div class="health"><img src="health.png" alt="health">
+                <a href="health">health</a>
+            </div>
+
+        </div>
+        <div class="first">
+            <div class="movies"><img src="movies.jpg" alt="movies">
+                <a href="movies">movies</a>
+            </div>
+            <div class="sports"><img src="sports.png" alt="sports">
+                <a href="sports">sports</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="adressabr">
+            <div class="ll">
+                <ul>
+                    <li><a href="aboutktb.html">About KTB</a> </li>
+                    <li><a href="Feed Back">Feed Back</a></li>
+                    <li><a href="Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="Complaint Redressal">Complaint Redressal</a></li>
+                    <li><a href="Contact Us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="follow">
+                <div class="gg"><a href="aboutktb.html"><img src="logo.png" alt="logo"></a>
+                    <p>KNOW THINGS BETTER</p>
+                </div>
+                <div class="follow-icons">
+                    <p>Follow us:</p>
+                    <DIV class="ICONS">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </DIV>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="copyright">
+                <p>Copyright &copy 2022. All Rights Reserved. Developed by : GIRI NAGESH</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
